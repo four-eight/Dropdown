@@ -1,0 +1,86 @@
+#dropdown {
+	    position: relative;
+		display: inline-block;
+		left:38%;
+}
+	#dropbtn {
+		background-color: rgba(63,63,77,0.7);
+		color: white;
+		font-family:sans-serif;
+		padding: 8px;
+		font-size: 16px;
+		cursor: pointer;
+		border-radius:10px;
+		width:184px;
+	}
+		#down{
+            float:right;
+			margin-top:8px;
+			margin-right:4px;
+			width: 0; 
+			height: 0; 
+			border-left: 5px solid transparent; 
+			border-right: 5px solid transparent; 
+			border-top: 6px solid white;
+		}
+	#triangle{ 
+		display:none;
+		width: 0; 
+		height: 0; 
+		margin-left:8px;
+		margin-top:4px;
+		border-left: 4px solid transparent; 
+		border-right: 4px solid transparent; 
+		border-bottom: 8px solid rgba(63,63,77,0.6);		
+	}
+	#dropdown:hover #triangle{
+		display: block;
+	}
+	#dropdown:hover #dropbtn {
+		background-color: rgba(63,63,77,0.5);
+	}
+	#dropdownContent {
+		display: none;
+		position: absolute;
+		background-color: rgba(63,63,77,0.6);
+		min-width: 200px;
+		font-size:14px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+	#dropdown:hover #dropdownContent{
+		display: block;
+	}
+		.content {
+			color: white;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		.content:hover {
+			background-color: rgb(67,203,131);
+		}
+			#subContent{
+				position: absolute;
+				width: 150px;
+				display: none;
+				margin-left: 100%;
+				margin-top: -43px;
+				background-color: rgba(63,63,77,0.6);
+				box-shadow: 1px 2px 8px 0px rgba(0,0,0,0.2);
+			}
+			#more:hover #subContent{
+				display: block;
+			}
+				#subContent a{
+					color:white;
+					font-size:13px;
+					padding: 12px 16px;
+					text-decoration:none;
+					display: block;
+				}
+				#subContent a:hover{
+					background-color: rgb(67,203,131);
+				}
+			
+	
